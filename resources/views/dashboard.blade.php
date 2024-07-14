@@ -59,10 +59,12 @@
                                 <i class="fa-solid fa-shop"></i>
                                 Dashboard
                             </li>
-                            <li
-                                class="p-2 rounded-xl flex items-center gap-4 cursor-pointer transition duration-500 hover:bg-orange-600">
-                                <i class="fa-solid fa-house"></i>
-                                Property
+                            <li>
+                                <a class="p-2 rounded-xl flex items-center gap-4 cursor-pointer transition duration-500 hover:bg-orange-600"
+                                    href="{{route('properties')}}">
+                                    <i class="fa-solid fa-house"></i>
+                                    Properties
+                                </a>
                             </li>
                             <li
                                 class="p-2 rounded-xl flex items-center gap-4 cursor-pointer transition duration-500 hover:bg-orange-600">
