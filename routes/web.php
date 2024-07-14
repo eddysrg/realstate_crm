@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
+use App\Models\Property;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +20,9 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::post('/', [HomeController::class, 'store']);
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+
+    $properties = Property::all();
+    return view('dashboard', ['properties' => $properties]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {

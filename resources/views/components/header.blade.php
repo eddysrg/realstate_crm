@@ -28,8 +28,8 @@
         </ul>
 
         <div class="flex gap-5 text-sm font-semibold uppercase pl-5">
-            <p class="cursor-pointer">Sign in</p>
-            <p class="text-orange-500 cursor-pointer">Sign up</p>
+            <a class="cursor-pointer" href="{{route('login')}}">Sign in</a>
+            <a class="text-orange-500 cursor-pointer" href="{{route('register')}}">Sign up</a>
         </div>
     </nav>
 </div>
