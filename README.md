@@ -20,7 +20,7 @@ Set up your local environment
 ### Installation
 First clone the repository
 ```bash
-git clone https://github.com/eddysrg/TestJobs.git
+https://github.com/eddysrg/realstate_crm.git
 ```
 Go to the folder where to clone the repository and run the following commands to install the project dependencies
 ```bash
