@@ -21,9 +21,9 @@
             </div>
 
             <div class="grid grid-cols-3 gap-8">
-                @foreach ($properties as $property)
+                {{-- @foreach ($properties as $property)
                 <x-property-card :property="$property" />
-                @endforeach
+                @endforeach --}}
             </div>
 
             <a href=""

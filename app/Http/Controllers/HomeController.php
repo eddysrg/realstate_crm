@@ -12,8 +12,10 @@ class HomeController extends Controller
     public function index()
     {
 
-        $properties = Property::select('title', 'price', 'image', 'address', 'bedrooms', 'bathrooms', 'area')->limit(6)->get();
-        return view('home', ['properties' => $properties]);
+        // $properties = Property::select('title', 'price', 'image', 'address', 'bedrooms', 'bathrooms', 'area')->limit(6)->get();
+        // return view('home', ['properties' => $properties]);
+
+        return view('home');
     }
 
     public function store(Request $request)
